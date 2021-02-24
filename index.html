@@ -1,44 +1,32 @@
+<!DOCTYPE html>
 <html>
   <head>
+
+    <!-- Style Sheets -->
+    <link rel="stylesheet" href="css/resetMeyer.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+
     <title>HTML Example</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <style>
-      header{
-        display: flex;
-        flex-direction: row;
-        justify-content: right;
-        font: 13px/27px 'Roboto',RobotoDraft,Arial,sans-serif;
-      }
-      body{
-        
-      }
-      #doodle{
-        display: flex;
-        flex-basis: 10em;
-        flex-direction: row;
-        justify-content: center;
-      }
-      #search-form {
-        border-radius: 10px;
-        align-self: center;
-      }
-      #photo{
-        border-radius: 50%;
-      }
-    </style>
   </head>
   <header>
-    <div>
-
-        <a href="https://www.gmail.com">Gmail</a>
-        <a href="https://www.google.com.co/imghp?hl=es-419&authuser=0&ogbl" >Images</a>
-        <a href="https://github.com/caviro"><img id="photo" src="img/photo.jpg" alt=""></a>
-     
-    </div>
+    <div id="div-h">
+      <div class="header-titles"><a href="https://www.gmail.com">Gmail</a></div>
+      <div class="header-titles"><a href="https://www.google.com.co/imghp?hl=es-419&authuser=0&ogbl" >Imagenes</a></div>
+      <div class="header-gapps"><img src="img/google-apps.png" alt=""></div>
+      <div class="header-photo"><a href="https://github.com/caviro"><img id="photo" src="img/photo.jpg" alt=""></a></div>
+  </div>
   </header>
   <body>
-    <img id="doodle" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
-    <input id="search-form" type="text" placeholder="Search..">
+    <div class="main">
+      <div class="center">
+        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+        <input id="search-form" type="text" placeholder="Search..">
+      </div>
+      <div class="buttons">
+        <button>Buscar con Google</button><button>Me siento con suerte</button>
+      </div>
+      <p>Ofrecido por Google en: <a href="https://www.google.com/setprefs?sig=0_oiuIFeTccMR6Trufy4WU01ZS0eE%3D&hl=en&source=homepage&sa=X&ved=0ahUKEwiBlIuVlYPvAhVR2FkKHcMZCxwQ2ZgBCA4">English</a></p>
+    </div>
+    
   </body>
 </html>
